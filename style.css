@@ -233,14 +233,15 @@ main {
 
 /* mobile */
 @media screen and (max-width: 660px) {
-  body {
-    padding: 0;
-    margin: 0;
-    align-items: center;
+  body,
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   main {
     width: 90% !important;
+    height: 95%;
     flex-direction: column;
     justify-content: flex-end;
   }
@@ -249,7 +250,7 @@ main {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2.5rem;
   }
 
   .name {
@@ -277,6 +278,7 @@ main {
   }
 
   .btn,
+  .btn:active,
   .dice {
     transform: translateX(0);
     -webkit-transform: translateX(0);
@@ -291,10 +293,12 @@ main {
     top: 4rem !important;
     right: 3rem !important;
   }
+
   .btn--roll {
     top: 20rem !important;
     left: 3rem !important;
   }
+
   .btn--hold {
     top: 20rem !important;
     right: 3rem !important;
